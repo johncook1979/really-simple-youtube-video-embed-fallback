@@ -2,3 +2,10 @@
 <iframe id="main-video" src="https://www.youtube.com/embed/KZp1I_789-A"  width="560" height="315"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <!-- Fallback video embed -->
 <iframe id="fallback-video" style="display:none" width="560" height="315" src="https://www.youtube.com/embed/Unzc731iCUY?si=L-u01La1JM_fGnIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<!-- Alternative option using a data-attribute. This will reduce the amount of html, but require you to add the fallback embed URL directly to the main iframe 
+Notice in this example I have changed the ID to videoEmbed and added a data attribute called data-fallback with the embed URL of the fallback video.
+Use the js files 
+data-fallback-video-jquery.js and data-fallback-video.js files when using this method ->
+<iframe id="videoEmbed" src="https://www.youtube.com/embed/KZp1I_789-A"  width="560" height="315" data-fallback="https://www.youtube.com/embed/Unzc731iCUY?si=L-u01La1JM_fGnIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
